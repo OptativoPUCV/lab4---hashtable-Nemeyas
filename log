@@ -1,0 +1,19 @@
+Fri 14 Apr 2023 12:41:35 PM UTC: 
+ hashmap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:55:18: error: expected expression before ‘;’ token
+   55 |     HashMap mapa=;
+      |                  ^
+hashmap.c:57:9: error: invalid type argument of ‘->’ (have ‘HashMap’ {aka ‘struct HashMap’})
+   57 |     mapa->current=(-1);
+      |         ^~
+hashmap.c:58:9: error: invalid type argument of ‘->’ (have ‘HashMap’ {aka ‘struct HashMap’})
+   58 |     mapa->capacity=capacity;
+      |         ^~
+hashmap.c:59:9: error: invalid type argument of ‘->’ (have ‘HashMap’ {aka ‘struct HashMap’})
+   59 |     mapa->size=NULL;
+      |         ^~
+Compilation failed
+bb12bde
