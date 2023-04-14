@@ -17,3 +17,9 @@ hashmap.c:59:9: error: invalid type argument of ‘->’ (have ‘HashMap’ {ak
       |         ^~
 Compilation failed
 bb12bde
+Fri 14 Apr 2023 12:42:35 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|6
+total_score: 0/70
+0d83935
