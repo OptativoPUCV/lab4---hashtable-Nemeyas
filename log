@@ -212,3 +212,22 @@ hashmap.c:71:38: error: unused variable ‘start’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 58194e1
+Tue 18 Apr 2023 10:51:12 PM UTC: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:59:16: error: ‘size’ undeclared (first use in this function)
+   59 |     mapa->size=size;
+      |                ^~~~
+hashmap.c:59:16: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c: In function ‘searchMap’:
+hashmap.c:73:3: error: expected ‘,’ or ‘;’ before ‘while’
+   73 |   while(is_equal(key, map->buckets[i])!=0){
+      |   ^~~~~
+hashmap.c:71:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   71 |   int i = hash( key, map->capacity)
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+0444e11
