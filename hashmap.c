@@ -71,7 +71,7 @@ Pair * searchMap(HashMap * map,  char * key) {
   int i = hash( key, map->capacity), start;
   start = i;
   
-  while((is_equal(key, map->buckets[pos])!=0){
+  while((is_equal(key, map->buckets[pos])!=0)){
     if(key, map->buckets[pos]==1) {
       map->current= i;
       return map-> buckets[i];
