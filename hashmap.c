@@ -65,6 +65,8 @@ void eraseMap(HashMap * map,  char * key) {
 
 }
 
+
+
 Pair * searchMap(HashMap * map,  char * key) {   
   int i = hash( key, map->capacity), start;
   start = i;
@@ -74,9 +76,7 @@ Pair * searchMap(HashMap * map,  char * key) {
       map->current= i;
       return map-> buckets[i];
     }
-    return NULL;
     }
-  }
   return NULL;
 }
 
