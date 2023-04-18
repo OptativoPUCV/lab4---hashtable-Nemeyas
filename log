@@ -158,3 +158,25 @@ hashmap.c:71:38: error: variable ‘start’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 df8406f
+Tue 18 Apr 2023 10:47:02 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:59:16: error: ‘size’ undeclared (first use in this function)
+   59 |     mapa->size=size;
+      |                ^~~~
+hashmap.c:59:16: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c: In function ‘searchMap’:
+hashmap.c:75:28: error: comparison between pointer and integer [-Werror]
+   75 |     if(key, map->buckets[i]==1) {
+      |                            ^~
+hashmap.c:75:11: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   75 |     if(key, map->buckets[i]==1) {
+      |           ^
+hashmap.c:71:38: error: variable ‘start’ set but not used [-Werror=unused-but-set-variable]
+   71 |   int i = hash( key, map->capacity), start;
+      |                                      ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+aaf323a
