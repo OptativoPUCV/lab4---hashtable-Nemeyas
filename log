@@ -341,3 +341,17 @@ hashmap.c:49:11: error: unused variable ‘valor’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 16456a6
+Thu 27 Apr 2023 01:24:47 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:50:20: error: assignment to ‘Pair *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   50 |     map->buckets[i]=i;
+      |                    ^
+hashmap.c:49:11: error: unused variable ‘valor’ [-Werror=unused-variable]
+   49 |     Pair *valor= createPair(key,value);
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8e5d23f
