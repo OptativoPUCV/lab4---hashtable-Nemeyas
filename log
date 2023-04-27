@@ -264,3 +264,9 @@ hashmap.c:65:7: error: unused variable ‘firts’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 adc6c15
+Thu 27 Apr 2023 01:11:14 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|5
+total_score: 10/70
+5bb5911
