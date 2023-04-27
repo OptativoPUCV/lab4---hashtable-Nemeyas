@@ -61,7 +61,17 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-  
+  int i=hash(key, map->capacity);
+  int firts=i;
+  while(map->buckets[i] != NULL){
+    if(is_equal(map->buckets[i]->key, key)==1){
+      map->size--;
+      map->buckets[i]->key=NULL;
+      break;
+    }
+    i=((i+1)%map->capacity);
+    if(first==i) break;
+  }
 
 }
 

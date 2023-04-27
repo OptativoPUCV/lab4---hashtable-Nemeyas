@@ -248,3 +248,19 @@ Tue 18 Apr 2023 10:52:45 PM UTC:
  tests:  1|6
 total_score: 0/70
 8af70e9
+Thu 27 Apr 2023 01:10:54 AM UTC: 
+ hashmap.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:73:8: error: ‘first’ undeclared (first use in this function); did you mean ‘firts’?
+   73 |     if(first==i) break;
+      |        ^~~~~
+      |        firts
+hashmap.c:73:8: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:65:7: error: unused variable ‘firts’ [-Werror=unused-variable]
+   65 |   int firts=i;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+adc6c15
