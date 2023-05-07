@@ -95,7 +95,7 @@ Pair * searchMap(HashMap * map,  char * key) {
   
   while(map -> buckets[i] != NULL && is_equal(key, map->buckets[i]->key)==0){
     i = ((i + 1) % map -> capacity);
-    if(is_equal(key, map->buckets[i])==1) {
+    if(is_equal(key, map->buckets[i]->key)==1) {
       map->current= i;
       return map-> buckets[i];
     }
