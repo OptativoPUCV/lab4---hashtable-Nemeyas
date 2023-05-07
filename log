@@ -464,3 +464,17 @@ hashmap.c:62:7: error: unused variable ‘auxcap’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 c7fccf4
+Sun 07 May 2023 11:18:49 PM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:63:10: error: unused variable ‘old_buckets’ [-Werror=unused-variable]
+   63 |   Pair **old_buckets = map->buckets;
+      |          ^~~~~~~~~~~
+hashmap.c:62:7: error: unused variable ‘auxcap’ [-Werror=unused-variable]
+   62 |   int auxcap = map->capacity;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+582f445
