@@ -478,3 +478,19 @@ hashmap.c:62:7: error: unused variable ‘auxcap’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 582f445
+Sun 07 May 2023 11:19:39 PM UTC: 
+ hashmap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:70:32: error: passing argument 2 of ‘insertMap’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   70 |       insertMap(map,old_buckets[i],old_buckets[i]);
+      |                     ~~~~~~~~~~~^~~
+      |                                |
+      |                                Pair *
+hashmap.c:42:38: note: expected ‘char *’ but argument is of type ‘Pair *’
+   42 | void insertMap(HashMap * map, char * key, void * value) {
+      |                               ~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+565fc9d
