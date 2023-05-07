@@ -494,3 +494,9 @@ hashmap.c:42:38: note: expected ‘char *’ but argument is of type ‘Pair *�
 cc1: all warnings being treated as errors
 Compilation failed
 565fc9d
+Sun 07 May 2023 11:19:49 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 40/70
+81ed23d
