@@ -70,7 +70,7 @@ HashMap * createMap(long capacity) {
     mapa->current=-1;
     mapa->buckets=(Pair **)malloc(sizeof(Pair *));;
     mapa->capacity=capacity;
-    return NULL;
+    return map;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
