@@ -524,3 +524,25 @@ Mon 08 May 2023 04:01:09 AM UTC:
  tests:  10|2
 total_score: 50/70
 dd01361
+Mon 08 May 2023 04:02:35 AM UTC: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:131:25: error: returning ‘Pair **’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+  131 |     return (map->buckets+i);
+      |            ~~~~~~~~~~~~~^~~
+hashmap.c: At top level:
+hashmap.c:135:5: error: expected identifier or ‘(’ before ‘return’
+  135 |     return NULL;
+      |     ^~~~~~
+hashmap.c:136:1: error: expected identifier or ‘(’ before ‘}’ token
+  136 | }
+      | ^
+hashmap.c: In function ‘nextMap’:
+hashmap.c:133:3: error: control reaches end of non-void function [-Werror=return-type]
+  133 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+4eb181a
