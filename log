@@ -733,3 +733,19 @@ hashmap.c:103:7: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 933127a
+Mon 08 May 2023 04:18:17 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:107:11: error: ‘au’ undeclared (first use in this function); did you mean ‘aux’?
+  107 |     if(i==au) {
+      |           ^~
+      |           aux
+hashmap.c:107:11: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:103:7: error: unused variable ‘aux’ [-Werror=unused-variable]
+  103 |   int aux=i;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+0e3400d
