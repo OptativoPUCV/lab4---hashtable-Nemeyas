@@ -121,6 +121,14 @@ Pair * firstMap(HashMap * map) {
     i++;
     if (i >= map->capacity) return NULL;
   }
+  /*for(i=0; i<map->capacity; i++){
+    if(map->buckets[i] != NULL){
+      map->current = i;
+      if (i >= map->capacity){
+        return NULL;
+      } 
+    }
+  } Por que no sirve este ciclo?*/
   map->current = i;
   return map->buckets[i];
 }
