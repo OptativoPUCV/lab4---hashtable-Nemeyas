@@ -872,3 +872,14 @@ hashmap.c:120:10: note: each undeclared identifier is reported only once for eac
       |          ^~~~
 Compilation failed
 660253b
+Mon 08 May 2023 04:34:39 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:124:16: error: ‘i’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  124 |   map->current = i;
+      |   ~~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+2e34425
