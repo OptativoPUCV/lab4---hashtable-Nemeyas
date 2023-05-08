@@ -117,7 +117,7 @@ Pair * firstMap(HashMap * map) {
     return NULL;
   }
   int i;
-  for(i=0; map->buckets[i]!=NULL; i++){
+  for(i=0; map->buckets[i]==NULL; i++){
     if(map->buckets[i] != NULL){
       map->current = i;
       return map->buckets[i];
