@@ -116,7 +116,7 @@ Pair * firstMap(HashMap * map) {
   if(map->size==0){
     return NULL;
   }
-  int i;
+  int i=0;
   while (map->buckets[i]== NULL && map->buckets[i]->key == NULL){
     i++;
     if (i >= map->capacity) return NULL;
