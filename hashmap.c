@@ -104,7 +104,7 @@ Pair * searchMap(HashMap * map,  char * key) {
   
   while(map -> buckets[i] != NULL && strcmp(map->buckets[i]->key, key) != 0){
     i = ((i + 1) % map -> capacity);
-    if(i==aux) {
+    if(i==au) {
       return NULL;
     }
     }
@@ -114,14 +114,14 @@ Pair * searchMap(HashMap * map,  char * key) {
 
 Pair * firstMap(HashMap * map) {
   int i;
-  for(i=0; i < map->capacity; i++){
+  for(i=0; i<map->capacity; i++){
     if(map->buckets[i] != NULL){
       map->current = i;
       return map->buckets[i];
     }
   }
   return NULL;
-}
+};
 
 Pair * nextMap(HashMap * map) {
   if(map->current==-1){
