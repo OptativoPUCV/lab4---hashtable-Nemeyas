@@ -607,3 +607,17 @@ Mon 08 May 2023 04:03:04 AM UTC:
  tests:  10|2
 total_score: 50/70
 eea38e5
+Mon 08 May 2023 04:03:48 AM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:128:18: error: assignment to ‘long int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  128 |   if(map->current=NULL) return NULL;
+      |                  ^
+hashmap.c:128:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  128 |   if(map->current=NULL) return NULL;
+      |      ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+2eb9137
