@@ -883,3 +883,14 @@ hashmap.c:124:16: error: ‘i’ may be used uninitialized in this function [-We
 cc1: all warnings being treated as errors
 Compilation failed
 2e34425
+Mon 08 May 2023 04:35:49 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:120:22: error: ‘i’ may be used uninitialized [-Werror=maybe-uninitialized]
+  120 |   while (map->buckets[i]== NULL && map->buckets[i]->key == NULL){
+      |                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+5193bab
