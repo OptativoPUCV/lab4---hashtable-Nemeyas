@@ -116,14 +116,10 @@ Pair * firstMap(HashMap * map) {
   if(map->size==0){
     return NULL;
   }
-  long i;
-  for(i=0; i<map->capacity; i++){
-    if(map->buckets[i] != NULL){
-      map->current = i;
-      if (i >= map->capacity){
-        return NULL;
-      } 
-    }
+  int i;
+  while (true){
+    i++;
+    if (i >= map->capacity) return NULL;
   }
   map->current = i;
   return map->buckets[i];

@@ -855,3 +855,20 @@ Mon 08 May 2023 04:32:13 AM UTC:
  tests:  12|1
 total_score: 60/70
 fa7eb06
+Mon 08 May 2023 04:34:03 AM UTC: 
+ hashmap.c | 12 ++++--------
+ 1 file changed, 4 insertions(+), 8 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:120:10: error: ‘true’ undeclared (first use in this function)
+  120 |   while (true){
+      |          ^~~~
+hashmap.c:7:1: note: ‘true’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    6 | #include "hashmap.h"
+  +++ |+#include <stdbool.h>
+    7 | 
+hashmap.c:120:10: note: each undeclared identifier is reported only once for each function it appears in
+  120 |   while (true){
+      |          ^~~~
+Compilation failed
+660253b
