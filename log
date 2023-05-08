@@ -649,3 +649,24 @@ Mon 08 May 2023 04:04:22 AM UTC:
  tests:  10|2
 total_score: 50/70
 1c41086
+Mon 08 May 2023 04:05:14 AM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:135:7: error: ‘current’ undeclared (first use in this function)
+  135 |   map-current=-1
+      |       ^~~~~~~
+hashmap.c:135:7: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:135:17: error: expected ‘;’ before ‘return’
+  135 |   map-current=-1
+      |                 ^
+      |                 ;
+  136 |   return NULL;
+      |   ~~~~~~         
+hashmap.c:137:1: error: control reaches end of non-void function [-Werror=return-type]
+  137 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a22b4fb
