@@ -766,3 +766,14 @@ Mon 08 May 2023 04:21:27 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 8e90462
+Mon 08 May 2023 04:21:37 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:119:29: error: returning ‘char *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+  119 |       return map->buckets[i]->key;
+      |              ~~~~~~~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+237e7b6
