@@ -100,10 +100,11 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * searchMap(HashMap * map,  char * key) {   
   int i = hash( key, map->capacity);
+  int aux=i;
   
   while(map -> buckets[i] != NULL && strcmp(map->buckets[i]->key, key) != 0){
     i = ((i + 1) % map -> capacity);
-    if(is_equal(key, map->buckets[i]->key)==1) {
+    if(i==aux) {
       return NULL;
     }
     }
