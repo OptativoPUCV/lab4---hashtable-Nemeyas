@@ -632,3 +632,14 @@ hashmap.c:128:6: error: suggest parentheses around assignment used as truth valu
 cc1: all warnings being treated as errors
 Compilation failed
 53b9100
+Mon 08 May 2023 04:04:07 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:128:18: error: comparison between pointer and integer [-Werror]
+  128 |   if(map->current==NULL) return NULL;
+      |                  ^~
+cc1: all warnings being treated as errors
+Compilation failed
+5dab458
